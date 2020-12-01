@@ -1,0 +1,89 @@
+@import url(reset.css);
+
+body {
+   font-size: 1.2rem;
+   font-family: 'Atma', cursive,  Arial, Helvetica, sans-serif ;
+   color: green;
+   background-color: #0d0d0d;
+}
+
+.container {
+   display: grid;
+   grid-template-rows: 8rem auto 4rem;
+}
+
+/* css header */
+h1 {
+   font-size: 5rem;
+   text-transform: uppercase;
+}
+
+.logo-nic {
+   font-style: 2rem;
+   text-transform: lowercase;
+}
+
+header {
+   display: grid;
+   grid-template-columns: 8rem auto;
+   grid-gap: 1rem;
+   justify-items: center;
+   margin: 1rem;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+}
+
+.logo img {
+   max-width: 100%;
+   border-radius: 1rem;
+}
+
+/* css album */
+.tiles {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(0,250px));
+   list-style-type: none;
+   justify-content: center;
+   align-content: space-between;
+}
+
+figure img {
+   max-width: 100%;
+}
+
+figure a {
+   cursor: pointer;
+}
+figure a:hover {
+   opacity: 0.6;
+}
+
+figcaption {
+   text-align: center;
+   padding: 1rem;
+}
+
+/* css footer */
+footer {
+   display: grid;
+   grid-template-columns: 4rem auto;
+   margin: 2rem; 
+   grid-gap: 2rem;
+   align-items: center;
+}
+
+footer img {
+   max-width: 100%;
+   padding-bottom: 1rem;
+}
+
+.copywriter {
+   text-align: center;
+   color: #fff;
+   font-size: 1rem;
+   letter-spacing: 0.1rem;
+   padding-bottom: 1rem;
+}
