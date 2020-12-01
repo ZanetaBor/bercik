@@ -9,13 +9,14 @@ body {
 
 .container {
    display: grid;
-   grid-template-rows: 8rem auto 4rem;
+   grid-template-rows: auto auto 4rem;
 }
 
 /* css header */
 h1 {
    font-size: 5rem;
    text-transform: uppercase;
+   text-align: center;
 }
 
 .logo-nic {
@@ -87,3 +88,24 @@ footer img {
    letter-spacing: 0.1rem;
    padding-bottom: 1rem;
 }
+
+@media all and (max-width: 768px) {
+   h1 {
+      font-size: 3rem;
+      text-align: left;
+}
+   header {
+      grid-template-columns: 6rem auto;
+   }
+}
+
+@media all and (max-width: 740px) {
+   h1 {
+      font-size: 2rem;
+      text-align: left;
+}
+   header {
+      grid-template-columns: 5rem auto;
+   }
+}
+
